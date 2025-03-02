@@ -1,0 +1,39 @@
+{
+  "name": "mangabook",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayoubgoumbark/MangaBook.git"
+  },
+  "author": "ayoub",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayoubgoumbark/MangaBook/issues"
+  },
+  "homepage": "https://github.com/ayoubgoumbark/MangaBook#readme",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-validator": "^7.2.1",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "mangabook": "file:",
+    "mongodb": "^6.13.1",
+    "mongoose": "^8.10.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.15"
+  }
+}
