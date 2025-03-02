@@ -55,6 +55,7 @@ exports.signin = async (req, res) => {
 				.status(401)
 				.json({ success: false, message: error.details[0].message });
 		}
+		
 
 		const existingUser = await User.findOne({ email }).select('+password');
 		if (!existingUser) {

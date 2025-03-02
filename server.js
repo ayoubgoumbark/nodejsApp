@@ -5,7 +5,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const app = express();
 const authRoutes = require('./routes/authRoutes');
-const mangaRoutes = require('./routes/mangaRoutes'); // Import manga routes
+const postRoutes = require('./routes/postsRouter'); // Import manga routes
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 
@@ -41,7 +41,7 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/manga', mangaRoutes); // Use manga routes under /api/manga
+app.use('/api/post', postRoutes); 
 
 // Connect to MongoDB
 require('./config/db');
